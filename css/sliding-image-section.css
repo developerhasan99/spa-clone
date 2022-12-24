@@ -111,7 +111,7 @@
 }
 @media (max-width: 767px) {
   .sliding-images-carousel_inner {
-    padding: 60px;
+    padding: 60px 15px;
     margin-top: 50px;
   }
   .sliding-images-carousel_bg {

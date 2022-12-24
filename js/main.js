@@ -75,10 +75,22 @@ $(document).ready(function () {
     $(".sliding-images-carousel_content_inner").slick({
       infinite: true,
       autoplay: true,
-      draggable: false,
       slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplaySpeed: 3000,
+      dots: false,
       arrows: true,
-      adaptiveHeight: true,
+      draggable: false,
+      swipe: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     });
   });
 });
